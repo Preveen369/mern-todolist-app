@@ -1,0 +1,102 @@
+/* General App Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: white;
+  width: 600px; /* Increased from 400px to 600px */
+  padding: 30px; /* Slightly more padding for balance */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  gap: 15px; /* Increased gap for better spacing */
+  margin-bottom: 25px; /* Slightly more margin */
+}
+
+input {
+  flex: 1;
+  padding: 10px; /* Increased padding for better input field appearance */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Ensure text is readable */
+}
+
+button {
+  padding: 10px 20px; /* Slightly larger button for balance */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Todo List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  padding: 12px 15px; /* Adjusted padding */
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button with transition */
+li button {
+  background-color: red;
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+li button:active {
+  transform: scale(0.9);
+}
