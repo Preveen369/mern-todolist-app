@@ -30,6 +30,18 @@ const TodoList = ({ todos, fetchTodos }) => {
     }
   };
 
+  const handleUpdate = async (id, updatedTask, updatedCompleted) => {
+    try {
+      await axios.put(`/api/todos/${id}`, {
+        task: updatedTask,
+        completed: updatedCompleted,
+      });
+      fetchTodos(); // Refresh the list after update
+    } catch (error) {
+      console.error("Error updating todo:", error);
+    }
+  };
+
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Todo List</h1>
@@ -55,6 +67,14 @@ const TodoList = ({ todos, fetchTodos }) => {
                 {todo.task}
               </span>
             </div>
+            <button
+              onClick={() =>
+                handleUpdate(todo._id, prompt("Update task:", todo.task), todo.completed)
+              }
+              style={styles.updateButton}
+            >
+              Update
+            </button>
             <button
               onClick={() => handleDelete(todo._id)}
               style={styles.deleteButton}
@@ -123,6 +143,17 @@ const styles = {
     fontWeight: "400",
     color: "#333",
     transition: "color 0.3s ease",
+  },
+  updateButton: {
+    padding: "6px 15px",
+    backgroundColor: "#3498db",
+    color: "#fff",
+    border: "none",
+    borderRadius: "6px",
+    cursor: "pointer",
+    fontSize: "14px",
+    fontWeight: "500",
+    transition: "all 0.3s ease",
   },
   deleteButton: {
     padding: "6px 15px",
