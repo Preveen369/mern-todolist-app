@@ -1,9 +1,11 @@
 import axios from "axios";
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "/api";
+
 const TodoList = ({ todos, fetchTodos }) => {
   const handleToggle = async (id, completed) => {
     try {
-      await axios.put(`/api/todos/${id}`, { completed: !completed });
+      await axios.put(`${API_BASE_URL}/todos/${id}`, { completed: !completed });
       fetchTodos(); // Refresh list
     } catch (error) {
       console.error("Error updating task:", error);
@@ -12,7 +14,7 @@ const TodoList = ({ todos, fetchTodos }) => {
 
   const toggleComplete = async (id, currentStatus) => {
     try {
-      await axios.put(`/api/todos/${id}`, {
+      await axios.put(`${API_BASE_URL}/api/todos/${id}`, {
         completed: !currentStatus, // Toggle the boolean value
       });
       fetchTodos(); // Refresh the list after update
@@ -23,7 +25,7 @@ const TodoList = ({ todos, fetchTodos }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/api/todos/${id}`); // Use proxy
+      await axios.delete(`${API_BASE_URL}/todos/${id}`); // Use proxy
       fetchTodos();
     } catch (error) {
       console.error("Error deleting task:", error);
@@ -32,7 +34,7 @@ const TodoList = ({ todos, fetchTodos }) => {
 
   const handleUpdate = async (id, updatedTask, updatedCompleted) => {
     try {
-      await axios.put(`/api/todos/${id}`, {
+      await axios.put(`${API_BASE_URL}/todos/${id}`, {
         task: updatedTask,
         completed: updatedCompleted,
       });
