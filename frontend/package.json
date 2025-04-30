@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://mern-todolist-app-backend-a5k8.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
