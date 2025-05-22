@@ -45,6 +45,9 @@ const TodoList = ({ todos, fetchTodos }) => {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Todo List</h1>
+      {todos.length === 0 && (
+        <p style={styles.emptyMessage}>Your todo list is empty. Add tasks to get started!</p>
+      )}
       <ul style={styles.list}>
         {todos.map((todo) => (
           <li key={todo._id} style={styles.listItem}>
@@ -106,6 +109,12 @@ const styles = {
     marginBottom: "25px",
     color: "#2c3e50",
     letterSpacing: "0.5px",
+  },
+  emptyMessage: {
+    textAlign: "center",
+    fontSize: "14px",
+    color: "#888",
+    marginBottom: "20px",
   },
   list: {
     listStyleType: "none",
