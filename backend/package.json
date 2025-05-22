@@ -7,7 +7,6 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "proxy": "https://mern-todolist-app-backend-a5k8.onrender.com",
   "keywords": [],
   "author": "",
   "license": "ISC",
