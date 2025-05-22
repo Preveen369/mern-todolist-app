@@ -9,7 +9,7 @@ const TodoForm = ({ fetchTodos }) => {
     if (!task.trim()) return;
 
     try {
-      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/todos`, { task });
+      await axios.post(`/api/todos`, { task });
       setTask(""); // Clear input
       fetchTodos(); // Refresh list
     } catch (error) {
