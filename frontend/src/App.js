@@ -9,7 +9,7 @@ const App = () => {
 
   const fetchTodos = async () => {
     try {
-      const response = await axios.get("/api/todos");
+      const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/todos`);
       setTodos(response.data);
     } catch (error) {
       console.error("Error fetching tasks:", error);
