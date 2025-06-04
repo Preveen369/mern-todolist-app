@@ -70,11 +70,11 @@ mern-todolist-app/
 
 2. **Set up the backend**
 
-   - Follow the instructions in the Backend README to set up and run the backend server.
+   - Follow the instructions in the [Backend README](./backend/README.md) to set up and run the backend server.
 
 3. **Set up the frontend**
 
-   - Follow the instructions in the Frontend README to set up and run the frontend application.
+   - Follow the instructions in the [Frontend README](./frontend/README.md)  to set up and run the frontend application.
 
 ## 🤝 Contributing
 
