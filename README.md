@@ -1,4 +1,4 @@
-# 📋 MERN-TodoList-App – A Full-Stack Todo Application
+# 📋 MERN-TodoList-App 
 
 ![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)
 ![Frontend](https://img.shields.io/badge/Frontend-React-orange.svg)
