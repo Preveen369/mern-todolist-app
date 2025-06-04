@@ -58,6 +58,7 @@ mern-todolist-app/
 - Node.js (v14 or higher)
 - npm or yarn
 - MongoDB (local installation or MongoDB Atlas)
+- Thunderclient API (for API endpoints testing)
 
 ### 🧑‍💻 Steps to run
 
