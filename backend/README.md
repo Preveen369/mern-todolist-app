@@ -37,6 +37,7 @@ backend/
 - Node.js (v14 or higher)
 - npm or yarn
 - MongoDB (local installation or MongoDB Atlas)
+- Thunderclient API (for API endpoints testing)
 
 ### 🧑‍💻 Steps to run
 1. **Navigate to the backend directory**
