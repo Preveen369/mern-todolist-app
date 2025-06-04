@@ -37,7 +37,6 @@ frontend/
 - Node.js (v14 or higher)
 - npm or yarn
 - Backend server running (see [Backend README](../backend/README.md))
-- Thunderclient API (for API endpoints testing)
 
 ### 🧑‍💻 Steps to run
 1. **Navigate to the frontend directory**
