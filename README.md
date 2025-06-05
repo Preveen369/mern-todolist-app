@@ -56,9 +56,6 @@ Below is the project demo video of the **MERN-TodoList-App** interface:
 
 ---
 
-
----
-
 ## 📂 Project Structure
 
 ```
