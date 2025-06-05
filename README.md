@@ -38,6 +38,16 @@
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 
+---
+
+## 📸 Screenshots
+
+Below are some screenshots showcasing the **MERN-TodoList-App** interface:
+
+![Home Page](./frontend/src/images/home-page.png)
+
+---
+
 ## 📂 Project Structure
 
 ```
