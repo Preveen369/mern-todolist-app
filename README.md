@@ -48,6 +48,17 @@ Below are some screenshots showcasing the **MERN-TodoList-App** interface:
 
 ---
 
+## 📽️ Project Demo
+
+Below is the project demo video of the **MERN-TodoList-App** interface:
+
+[Project Demo Video](https://jmp.sh/fa0kA9ig)
+
+---
+
+
+---
+
 ## 📂 Project Structure
 
 ```
