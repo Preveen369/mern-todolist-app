@@ -10,7 +10,9 @@
 
 **MERN-TodoList-App** is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to manage their tasks by adding, updating, and deleting todos, with data persistently stored in a MongoDB database. The frontend is created using Create React App, providing a responsive and interactive user interface, while the backend handles API requests and database operations.
 
-## 🚀 Features
+---
+
+## 🚀 Core Features
 
 ### 📋 Task Management
 
@@ -31,6 +33,8 @@
 
 - Tasks are stored in MongoDB for data persistence.
 - Ensures tasks are retained across sessions.
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -69,6 +73,8 @@ mern-todolist-app/
    └── README.md               # Main project documentation
 ```
 
+---
+
 ## 🧪 Installation & Setup
 
 ### 📋 Prerequisites
@@ -95,17 +101,26 @@ mern-todolist-app/
 
    - Follow the instructions in the [Frontend README](./frontend/README.md)  to set up and run the frontend application.
 
+---
+
 ## 🤝 Contributing
 
 Pull requests are welcome! Feel free to fork the repository and suggest improvements. For detailed contribution steps, see the Backend README or Frontend README for component-specific contributions.
 
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 ## 📧 Contact
-
 For queries or suggestions:
+- 📩 Email: [spreveen123@gmail.com](mailto:spreveen123@gmail.com)
+- 🌐 LinkedIn: [www.linkedin.com/in/preveen-s-17250529b/](https://www.linkedin.com/in/preveen-s-17250529b/)
 
-- 📩 Email: spreveen123@gmail.com
-- 🌐 LinkedIn: www.linkedin.com/in/preveen-s-17250529b/
+---
 
 ## 🌟 Show Your Support
-
 If you like this project, please consider giving it a ⭐ on GitHub!
